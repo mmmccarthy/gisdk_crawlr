@@ -1,5 +1,5 @@
-```mermaid;
-graph TD;;
+```mermaid
+graph TD;
 External_Trip_Model[External Trip Model];
 signals[signals];
 spdcap[spdcap];
@@ -29,4 +29,4 @@ transit_assignment[transit_assignment];
 msa[msa];
 External_Trip_Model[External Trip Model];
 External_Trip_Model-->signals-->spdcap-->Stratcurve-->Tripgen-->MktSeg-->BuildTransitNet-->BuildNet1-->BuildNet2-->PrepDC-->DC-->net_skim-->ModeChoice-->CombinePurposes-->todchoice-->Truck_Model-->Init_net-->net_build-->preload-->filltrucks-->net_build-->pivot-->assignment-->linkflow-->msa-->transit_assignment-->msa-->External_Trip_Model;
-```;
+```
