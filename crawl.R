@@ -91,4 +91,4 @@ mainRunner <- mainRunner[1:reloop]
 mainDefs <- paste0(gsub("\\s","_",mainRunner),"[",mainRunner,"]")
 mainGraph <- paste(gsub("\\s","_",mainRunner), collapse = "-->")
   
-writeLines(c(mainDefs,mainGraph), sep = ";\n", con = "out.txt")
+writeLines(c("```mermaid","graph TD;",mainDefs,mainGraph,"```"), sep = ";\n", con = "NIRCC.md")
